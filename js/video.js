@@ -71,13 +71,13 @@ document.querySelector("#skip").addEventListener("click", function() {
 	time = video.currentTime;
 	console.log(time);
 
-	if ((time + 5) > video.duration) {
+	if ((time + 10) > video.duration) {
 		video.currentTime = 0;
 		time = video.currentTime;
 	}
 
 	else {
-		video.currentTime = time + 5;
+		video.currentTime = time + 10;
 		time = video.currentTime;
 	}
 	
