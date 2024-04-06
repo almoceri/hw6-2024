@@ -12,10 +12,6 @@ window.addEventListener("load", function() {
 	console.log(autopl);
 	console.log(loops);
 
-
-
-
-
 });
 
 
@@ -98,10 +94,13 @@ document.querySelector("#mute").addEventListener("click", function() {
 	mute = video.muted;
 	if(mute){
 		video.muted = false;
+		document.getElementById("mute").innerHTML = "Mute";
 	}
 
 	else {
 		video.muted = true;
+		document.getElementById("mute").innerHTML = "Unmute";
+
 	}
 
 	mute = video.muted;
